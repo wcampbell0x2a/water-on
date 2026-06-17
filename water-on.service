@@ -1,0 +1,10 @@
+[Unit]
+Description=Turn on garden valve via zigbee2mqtt (confirm + retry)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=
+Group=
+ExecStart=/usr/local/bin/water-on
